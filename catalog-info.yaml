@@ -5,6 +5,16 @@ metadata:
   name: test
   annotations:
     github.com/project-slug: rusrom/test
-spec:
-  type: other
-  lifecycle: unknown
+schema:
+  required: 
+    - component_id
+    - description
+  properties:
+    component_id:
+      title: Name
+      type: string
+      description: Unique name of the component. Lowercase, URL-safe characters only.
+    description:
+      title: Description
+      type: string
+      description: Help others understand what this website is for.
